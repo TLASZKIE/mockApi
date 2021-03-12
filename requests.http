@@ -1,0 +1,29 @@
+GET http://localhost:3000/people
+
+###
+GET http://localhost:3000/people?q=2
+
+###
+GET http://localhost:3000/people?_sort
+
+###
+
+GET http://localhost:3000/people/0
+
+###
+
+POST http://localhost:3000/people
+content-type: application/json
+
+{
+    "name": "Kuba"
+}
+
+###
+
+PUT http://localhost:3000/people/2
+content-type: application/json
+
+{
+    "name": "Cezary"
+}
